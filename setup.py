@@ -4,9 +4,9 @@ import pkg_resources
 from setuptools import setup, find_packages
 
 setup(
-    name="clip_",
-    py_modules=["clip_"],
-    version="1.0",
+    name="clip2",
+    py_modules=["clip2"],
+    version="1.1",
     description="",
     author="OpenAI",
     packages=find_packages(exclude=["tests*"]),

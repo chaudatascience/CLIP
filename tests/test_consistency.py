@@ -3,7 +3,7 @@ import pytest
 import torch
 from PIL import Image
 
-import clip
+import clip2
 
 
 @pytest.mark.parametrize('model_name', clip.available_models())
