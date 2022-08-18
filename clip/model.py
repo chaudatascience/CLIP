@@ -356,8 +356,8 @@ class CLIP(nn.Module):
             return x
         else:
             ### edit
-            tokens_len = text.argmax(dim=-1)
-            max_token_len = max(tokens_len).item()+1
+            tokens_len = text.argmax(dim=-1) + 1
+            max_token_len = max(tokens_len).item() + 1
 
             x = x[torch.arange(x.shape[0]), :max_token_len] @ self.text_projection
             # x shape: batch, max_token_len, embed_dim
